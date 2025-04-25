@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fruit of the Spirit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Fruit of the Spirit Tracker</h1>
+      <p>Rate your daily practice of the 9 fruits of the Spirit</p>
+    </header>
+
+    <div class="fruits-container">
+      <div class="fruit" id="love">
+        <h3>Love</h3>
+        <input type="range" min="1" max="5" value="1" id="loveInput" />
+        <span id="loveRating">1</span>
+      </div>
+
+      <div class="fruit" id="joy">
+        <h3>Joy</h3>
+        <input type="range" min="1" max="5" value="1" id="joyInput" />
+        <span id="joyRating">1</span>
+      </div>
+
+      <div class="fruit" id="peace">
+        <h3>Peace</h3>
+        <input type="range" min="1" max="5" value="1" id="peaceInput" />
+        <span id="peaceRating">1</span>
+      </div>
+
+      <div class="fruit" id="patience">
+        <h3>Patience</h3>
+        <input type="range" min="1" max="5" value="1" id="patienceInput" />
+        <span id="patienceRating">1</span>
+      </div>
+
+      <div class="fruit" id="kindness">
+        <h3>Kindness</h3>
+        <input type="range" min="1" max="5" value="1" id="kindnessInput" />
+        <span id="kindnessRating">1</span>
+      </div>
+
+      <div class="fruit" id="goodness">
+        <h3>Goodness</h3>
+        <input type="range" min="1" max="5" value="1" id="goodnessInput" />
+        <span id="goodnessRating">1</span>
+      </div>
+
+      <div class="fruit" id="faithfulness">
+        <h3>Faithfulness</h3>
+        <input type="range" min="1" max="5" value="1" id="faithfulnessInput" />
+        <span id="faithfulnessRating">1</span>
+      </div>
+
+      <div class="fruit" id="gentleness">
+        <h3>Gentleness</h3>
+        <input type="range" min="1" max="5" value="1" id="gentlenessInput" />
+        <span id="gentlenessRating">1</span>
+      </div>
+
+      <div class="fruit" id="selfcontrol">
+        <h3>Self-Control</h3>
+        <input type="range" min="1" max="5" value="1" id="selfcontrolInput" />
+        <span id="selfcontrolRating">1</span>
+      </div>
+    </div>
+
+    <button onclick="submitProgress()">Submit Progress</button>
+
+    <div id="result">
+      <h2>Your Daily Progress</h2>
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
